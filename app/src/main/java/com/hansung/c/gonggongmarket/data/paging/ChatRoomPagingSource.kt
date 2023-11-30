@@ -54,8 +54,8 @@ class ChatRoomPagingSource : PagingSource<QuerySnapshot, ChatRoom>() {
                     userCollection.document(userUuid).get().await().toObject(UserDto::class.java)
                 ChatRoom(
                     uuid = chatRoomDto.uuid,
-                    conversationAppliedUserName = writer!!.name,
-                    conversationAppliedUserProfileImage = writer.profileImageUrl
+                    chatAppliedUserName = writer!!.name,
+                    chatAppliedUserProfileImage = writer.profileImageUrl
                 )
             }
             LoadResult.Page(

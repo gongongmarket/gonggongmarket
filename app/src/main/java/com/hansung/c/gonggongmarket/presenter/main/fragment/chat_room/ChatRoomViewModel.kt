@@ -33,7 +33,7 @@ class ChatRoomViewModel : ViewModel() {
         }
     }
 
-    fun errorMessageShown() {
+    fun showErrorMessage() {
         _uiState.update { it.copy(errorMessage = null) }
     }
 }

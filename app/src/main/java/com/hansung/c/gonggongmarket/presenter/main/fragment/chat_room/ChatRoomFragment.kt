@@ -73,7 +73,7 @@ class ChatRoomFragment : ViewBindingFragment<FragmentChatRoomBinding>() {
         adapter.submitData(viewLifecycleOwner.lifecycle, uiState.chatRooms)
 
         if (uiState.errorMessage != null) {
-            viewModel.errorMessageShown()
+            viewModel.showErrorMessage()
             showSnackBar(uiState.errorMessage)
         }
     }

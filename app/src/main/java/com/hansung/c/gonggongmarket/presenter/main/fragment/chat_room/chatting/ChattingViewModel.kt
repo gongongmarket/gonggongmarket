@@ -3,7 +3,7 @@ package com.hansung.c.gonggongmarket.presenter.main.fragment.chat_room.chatting
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hansung.c.gonggongmarket.data.repo.ChatRepository
-import com.hansung.c.gonggongmarket.presenter.main.fragment.chatroom.toUiState
+import com.hansung.c.gonggongmarket.presenter.main.fragment.chat_room.toUiState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

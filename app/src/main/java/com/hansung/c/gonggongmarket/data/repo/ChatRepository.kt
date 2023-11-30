@@ -141,8 +141,8 @@ object ChatRepository {
             Result.success(
                 ChatRoom(
                     uuid = chatRoomDto.uuid,
-                    conversationAppliedUserName = otherUser!!.name,
-                    conversationAppliedUserProfileImage = otherUser.profileImageUrl
+                    chatAppliedUserName = otherUser!!.name,
+                    chatAppliedUserProfileImage = otherUser.profileImageUrl
                 )
             )
         } catch (e: Exception) {

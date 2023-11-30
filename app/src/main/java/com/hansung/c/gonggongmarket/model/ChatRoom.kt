@@ -2,6 +2,6 @@ package com.hansung.c.gonggongmarket.model
 
 data class ChatRoom(
     val uuid: String,
-    val conversationAppliedUserName: String,
-    val conversationAppliedUserProfileImage: String?,
+    val chatAppliedUserName: String,
+    val chatAppliedUserProfileImage: String?,
 )

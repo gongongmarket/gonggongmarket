@@ -89,7 +89,7 @@ class ChattingActivity : AppCompatActivity() {
         }
 
         if (uiState.currentChatItemUiState != null) {
-            otherUserName.text = uiState.currentChatItemUiState.conversationAppliedUserName
+            otherUserName.text = uiState.currentChatItemUiState.chatAppliedUserName
         }
 
         progressBar.isVisible = uiState.isLoading

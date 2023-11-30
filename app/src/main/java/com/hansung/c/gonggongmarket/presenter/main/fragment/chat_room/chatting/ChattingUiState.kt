@@ -1,7 +1,7 @@
 package com.hansung.c.gonggongmarket.presenter.main.fragment.chat_room.chatting
 
 import com.hansung.c.gonggongmarket.model.Chat
-import com.hansung.c.gonggongmarket.presenter.main.fragment.chatroom.ChatRoomItemUiState
+import com.hansung.c.gonggongmarket.presenter.main.fragment.chat_room.ChatRoomItemUiState
 
 data class ChattingUiState(
     val currentChatItemUiState: ChatRoomItemUiState? = null,
