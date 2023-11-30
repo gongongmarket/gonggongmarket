@@ -13,7 +13,7 @@ import com.example.gonggongmarket.R
 import com.example.gonggongmarket.databinding.ActivityLoginBinding
 import com.google.android.material.snackbar.Snackbar
 import com.hansung.c.gonggongmarket.presenter.main.MainActivity
-import com.hansung.c.gonggongmarket.presenter.signUp.SignUpActivity
+import com.hansung.c.gonggongmarket.presenter.sign_up.SignUpActivity
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
