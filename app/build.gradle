@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.hansung.c.gonggongmarket'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.hansung.c.gonggongmarket"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+// Glide
+    implementation "com.github.bumptech.glide:glide:$glide"
+    implementation 'androidx.core:core-ktx:+'
+    kapt "com.github.bumptech.glide:compiler:$glide"
+
+    // Paging
+    implementation "androidx.paging:paging-common-ktx:$paging"
+    implementation "androidx.paging:paging-runtime-ktx:$paging"
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:31.0.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.1.1'
+    implementation 'com.google.firebase:firebase-storage:20.2.1'
+    implementation 'com.google.android.gms:play-services-base:18.2.0'
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.7.0'
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.1'
+
+    // Coroutine
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$life_cycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$life_cycle_version"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine_version"
+
+    // fragment
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+    // navigation
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+    // swipe refresh
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+}
