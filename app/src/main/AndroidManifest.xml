@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.gonggongMarket"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.main.fragment.profile.profile_update.ProfileUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.sign_up.UserInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.main.fragment.sale.add_update.SaleAddActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.main.fragment.sale.detail.SaleDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.sign_up.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.main.fragment.chat_room.chatting.ChattingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.sign_up.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hansung.c.gonggongmarket.presenter.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
